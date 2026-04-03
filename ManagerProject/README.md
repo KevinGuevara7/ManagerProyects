@@ -1,59 +1,90 @@
 # ManagerProject
+> The next-generation project management platform, powered by Artificial Intelligence to maximize team productivity and optimize decision-making.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.1.
+## The Pro Factor: Integrated Artificial Intelligence
 
-## Development server
+**ManagerProject** is not just a task assignment tool. Its AI core acts as a strategic consultant for the team:
 
-To start a local development server, run:
+* **📊 Intelligent Productivity Analysis:** The AI analyzes historical workflows, identifying performance patterns and evaluating the efficiency of organizers and collaborators in real time.
+* **💬 AI Chat Assistant:** A virtual teammate available 24/7. You can ask it for status summaries, suggestions to resolve blockers, or to generate task descriptions based on brief notes.
+* **🔮 Predictive Risk Reports:** Based on data, the AI generates early warnings about potential delays in critical milestones before they occur.
 
-```bash
-ng serve
-```
+## ✨ Key Features
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+* 👥 **Advanced Collaboration:** Full team management with roles, permissions, and detailed profiles.
+* 💬 **Unified Communication:** Integrated team chat and direct access to the AI Assistant within the same workflow.
+* 📊 **High-Performance Dashboard:** Clear visualization of project progress with key metrics analyzed by AI.
+* 📅 **Smart Planning:** Automatic suggestions for resource allocation and deadlines based on the team’s current workload.
+* 🔒 **Security and Scalability:** Architecture designed to protect sensitive data and grow with the organization.
 
-## Code scaffolding
+## 🛠️ Tech Stack
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+* **Frontend:** Angular (generated with Angular CLI 20.3.1) + [e.g., Tailwind CSS]
+* **Backend:** [Python (FastAPI/Django)]
+* **AI Engine:** [Gemini AI 2.5 Flash]
+* **Database:** [Firebase]
+* **Infrastructure:** [Render / Vercel]
 
-```bash
-ng generate component component-name
-```
+## ⚙️ Setup and Installation
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Prerequisites
 
-```bash
-ng generate --help
-```
+You need to have installed:
+* [e.g., Node.js v18+]
+* Angular CLI (`npm install -g @angular/cli`)
 
-## Building
+### Installation
 
-To build the project run:
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/tu-usuario/ManagerProject.git](https://github.com/tu-usuario/ManagerProject.git)
+    cd ManagerProject
+    ```
 
-```bash
-ng build
-```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # If there is a separate backend:
+    # cd ../server && npm install && cd ../ManagerProject
+    ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+3.  **Configure Environment Variables (Backend, if applicable):**
+    Create a `.env` file in the server root (based on `.env.example`) and add your keys:
+    ```env
+    DATABASE_URL=your_database_url
+    AI_API_KEY=your_ai_api_key
+    PORT=3000
+    ```
 
-## Running unit tests
+4.  **Run the Frontend project:**
+    ```bash
+    # For Angular development environment:
+    ng serve
+    ```
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+5.  **Access:**
+    Open your browser at `http://localhost:4200` to view the application.
 
-```bash
-ng test
-```
+## 📌 Project Status and Roadmap
 
-## Running end-to-end tests
+* 🚧 **Current Phase:** Frontend development of the web application.
+* ✅ **Milestone 1:** Authentication, Project Management, and Collaborators.
+* 🚀 **Next:** Build the artificial intelligence and implement additional features
 
-For end-to-end (e2e) testing, run:
+## 📄 License
 
-```bash
-ng e2e
-```
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## ⚠️ Legal Disclaimer & Data Privacy
 
-## Additional Resources
+**ManagerProject** is strictly an **educational and portfolio project**. It is **NOT a production-ready application** and is not intended for real-world project management.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Please read the following carefully:
+
+* **Educational Purpose:** This project was developed solely to demonstrate my skills in Angular, Python, Firebase, and Gemini AI integration. It has not undergone rigorous security, privacy, or performance testing.
+* **No Liability:** The author **accepts no responsibility** for any data loss, data breaches, or any other damages that may arise from using this application. You use this software entirely at your own risk.
+* **Use Fake Data:** **DO NOT** enter real, sensitive, personal, or proprietary data into this application. Use dummy, fake, or non-sensitive information for testing purposes only. All data stored in this educational database should be considered public and insecure.
+
+## ✍️ Author
+
+* **[Kevin Guevara]** - *Lead Developer / AI Solutions Architect*
