@@ -1,0 +1,23 @@
+<div style="padding: 40px; font-family: sans-serif;">
+  <h1>🏢 ManagerProjects: Registro de Activos</h1>
+  
+  <div style="background: #f4f4f4; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+    <h3>🆕 Nuevo Proyecto</h3>
+    <input #nameInput type="text" placeholder="Nombre del activo" style="padding: 10px; margin-right: 10px;">
+    <input #budgetInput type="number" placeholder="Presupuesto $" style="padding: 10px; margin-right: 10px;">
+    
+    <button (click)="enviarDatos(nameInput.value, budgetInput.value); nameInput.value=''; budgetInput.value=''" 
+            style="padding: 10px 20px; background: #28a745; color: white; border: none; cursor: pointer;">
+      🚀 Invertir / Guardar
+    </button>
+  </div>
+
+  <hr>
+
+  <h3>📊 Mis Inversiones Actuales</h3>
+  <div *ngFor="let p of proyectos" style="border-left: 5px solid #007bff; padding: 10px; margin-bottom: 10px; background: #fff; box-shadow: 2px 2px 5px #ccc;">
+    <strong>{{ p.name }}</strong> - <span style="color: green;">${{ p.budget }}</span>
+    <br>
+    <small>ID: {{ p.id }}</small>
+  </div>
+</div>
